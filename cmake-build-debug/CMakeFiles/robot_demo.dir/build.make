@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/michal/clion-2016.3.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/viktor/clion-2016.3.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/michal/clion-2016.3.1/bin/cmake/bin/cmake -E remove -f
+RM = /home/viktor/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michal/robot_demo
+CMAKE_SOURCE_DIR = /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michal/robot_demo/cmake-build-debug
+CMAKE_BINARY_DIR = /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/robot_demo.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/robot_demo.dir/flags.make
 
 CMakeFiles/robot_demo.dir/dijkstra.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/dijkstra.cpp.o: ../dijkstra.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robot_demo.dir/dijkstra.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/dijkstra.cpp.o -c /home/michal/robot_demo/dijkstra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robot_demo.dir/dijkstra.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/dijkstra.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/dijkstra.cpp
 
 CMakeFiles/robot_demo.dir/dijkstra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/dijkstra.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/dijkstra.cpp > CMakeFiles/robot_demo.dir/dijkstra.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/dijkstra.cpp > CMakeFiles/robot_demo.dir/dijkstra.cpp.i
 
 CMakeFiles/robot_demo.dir/dijkstra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/dijkstra.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/dijkstra.cpp -o CMakeFiles/robot_demo.dir/dijkstra.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/dijkstra.cpp -o CMakeFiles/robot_demo.dir/dijkstra.cpp.s
 
 CMakeFiles/robot_demo.dir/dijkstra.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/robot_demo.dir/dijkstra.cpp.o.provides.build: CMakeFiles/robot_demo.d
 
 CMakeFiles/robot_demo.dir/global_planner.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/global_planner.cpp.o: ../global_planner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/robot_demo.dir/global_planner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/global_planner.cpp.o -c /home/michal/robot_demo/global_planner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/robot_demo.dir/global_planner.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/global_planner.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/global_planner.cpp
 
 CMakeFiles/robot_demo.dir/global_planner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/global_planner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/global_planner.cpp > CMakeFiles/robot_demo.dir/global_planner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/global_planner.cpp > CMakeFiles/robot_demo.dir/global_planner.cpp.i
 
 CMakeFiles/robot_demo.dir/global_planner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/global_planner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/global_planner.cpp -o CMakeFiles/robot_demo.dir/global_planner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/global_planner.cpp -o CMakeFiles/robot_demo.dir/global_planner.cpp.s
 
 CMakeFiles/robot_demo.dir/global_planner.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/robot_demo.dir/global_planner.cpp.o.provides.build: CMakeFiles/robot_
 
 CMakeFiles/robot_demo.dir/irobotcreate.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/irobotcreate.cpp.o: ../irobotcreate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robot_demo.dir/irobotcreate.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/irobotcreate.cpp.o -c /home/michal/robot_demo/irobotcreate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robot_demo.dir/irobotcreate.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/irobotcreate.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/irobotcreate.cpp
 
 CMakeFiles/robot_demo.dir/irobotcreate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/irobotcreate.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/irobotcreate.cpp > CMakeFiles/robot_demo.dir/irobotcreate.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/irobotcreate.cpp > CMakeFiles/robot_demo.dir/irobotcreate.cpp.i
 
 CMakeFiles/robot_demo.dir/irobotcreate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/irobotcreate.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/irobotcreate.cpp -o CMakeFiles/robot_demo.dir/irobotcreate.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/irobotcreate.cpp -o CMakeFiles/robot_demo.dir/irobotcreate.cpp.s
 
 CMakeFiles/robot_demo.dir/irobotcreate.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/robot_demo.dir/irobotcreate.cpp.o.provides.build: CMakeFiles/robot_de
 
 CMakeFiles/robot_demo.dir/main.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot_demo.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/main.cpp.o -c /home/michal/robot_demo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot_demo.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/main.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/main.cpp
 
 CMakeFiles/robot_demo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/main.cpp > CMakeFiles/robot_demo.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/main.cpp > CMakeFiles/robot_demo.dir/main.cpp.i
 
 CMakeFiles/robot_demo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/main.cpp -o CMakeFiles/robot_demo.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/main.cpp -o CMakeFiles/robot_demo.dir/main.cpp.s
 
 CMakeFiles/robot_demo.dir/main.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/robot_demo.dir/main.cpp.o.provides.build: CMakeFiles/robot_demo.dir/m
 
 CMakeFiles/robot_demo.dir/mainwindow.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/mainwindow.cpp.o: ../mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/robot_demo.dir/mainwindow.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/mainwindow.cpp.o -c /home/michal/robot_demo/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/robot_demo.dir/mainwindow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/mainwindow.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/mainwindow.cpp
 
 CMakeFiles/robot_demo.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/mainwindow.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/mainwindow.cpp > CMakeFiles/robot_demo.dir/mainwindow.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/mainwindow.cpp > CMakeFiles/robot_demo.dir/mainwindow.cpp.i
 
 CMakeFiles/robot_demo.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/mainwindow.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/mainwindow.cpp -o CMakeFiles/robot_demo.dir/mainwindow.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/mainwindow.cpp -o CMakeFiles/robot_demo.dir/mainwindow.cpp.s
 
 CMakeFiles/robot_demo.dir/mainwindow.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/robot_demo.dir/mainwindow.cpp.o.provides.build: CMakeFiles/robot_demo
 
 CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o: ../moc_mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o -c /home/michal/robot_demo/moc_mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/moc_mainwindow.cpp
 
 CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/moc_mainwindow.cpp > CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/moc_mainwindow.cpp > CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.i
 
 CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/moc_mainwindow.cpp -o CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/moc_mainwindow.cpp -o CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.s
 
 CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o.provides.build: CMakeFiles/robot_
 
 CMakeFiles/robot_demo.dir/rplidar.cpp.o: CMakeFiles/robot_demo.dir/flags.make
 CMakeFiles/robot_demo.dir/rplidar.cpp.o: ../rplidar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/robot_demo.dir/rplidar.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/rplidar.cpp.o -c /home/michal/robot_demo/rplidar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/robot_demo.dir/rplidar.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robot_demo.dir/rplidar.cpp.o -c /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/rplidar.cpp
 
 CMakeFiles/robot_demo.dir/rplidar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_demo.dir/rplidar.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/robot_demo/rplidar.cpp > CMakeFiles/robot_demo.dir/rplidar.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/rplidar.cpp > CMakeFiles/robot_demo.dir/rplidar.cpp.i
 
 CMakeFiles/robot_demo.dir/rplidar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_demo.dir/rplidar.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/robot_demo/rplidar.cpp -o CMakeFiles/robot_demo.dir/rplidar.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/rplidar.cpp -o CMakeFiles/robot_demo.dir/rplidar.cpp.s
 
 CMakeFiles/robot_demo.dir/rplidar.cpp.o.requires:
 
@@ -247,7 +247,7 @@ robot_demo: CMakeFiles/robot_demo.dir/moc_mainwindow.cpp.o
 robot_demo: CMakeFiles/robot_demo.dir/rplidar.cpp.o
 robot_demo: CMakeFiles/robot_demo.dir/build.make
 robot_demo: CMakeFiles/robot_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michal/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable robot_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable robot_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -270,6 +270,6 @@ CMakeFiles/robot_demo.dir/clean:
 .PHONY : CMakeFiles/robot_demo.dir/clean
 
 CMakeFiles/robot_demo.dir/depend:
-	cd /home/michal/robot_demo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michal/robot_demo /home/michal/robot_demo /home/michal/robot_demo/cmake-build-debug /home/michal/robot_demo/cmake-build-debug /home/michal/robot_demo/cmake-build-debug/CMakeFiles/robot_demo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/CMakeFiles/robot_demo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robot_demo.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/michal/robot_demo
+# Install script for directory: /home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/michal/robot_demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/viktor/Desktop/RMRworkPackage/RMR_cv8/robot_demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

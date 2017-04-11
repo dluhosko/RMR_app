@@ -13,7 +13,7 @@ public:
 
     static constexpr double RAD2DEG = 57.2957795130823;
     static constexpr double DEG2RAD = 0.0174532925199432;
-
+    static constexpr double LIDAR_CONST = 1.42;
     Definitions();
 
     static double getDistance(POINT p1, POINT p2){

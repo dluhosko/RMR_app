@@ -16,7 +16,7 @@ double x,y, fi;
 pthread_mutex_t odom_mutex;
 pthread_mutex_t draw_map_mutex;
 
- void *mappingThread(void *param);
+void *mappingThread(void *param);
 
 
 MainWindow::MainWindow(QWidget *parent) :
