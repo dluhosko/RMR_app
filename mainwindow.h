@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include "QTimer"
+#include "QPainter"
 #include "navigation.h"
 #include "irobotcreate.h"
 #include "definitions.h"
@@ -11,6 +13,7 @@
 #include "grid_map.h"
 #include "global_planner.h"
 #include "mapping.h"
+#include "map_loader.h"
 
 namespace Ui {
 class MainWindow;
@@ -36,6 +39,8 @@ private slots:
     void on_pushButton_2_clicked();
     void on_pointButton_clicked();
     void on_turnButton_clicked();
+    void paintEvent(QPaintEvent *event);
+    void updatePicture();
 
     void showMessageBox()
             {
@@ -52,6 +57,11 @@ private:
     pthread_t threadHandleLidar; // handle na vlakno
     int threadLidarMapping;
 
+    int paintEventStatus;
+    QPainter painter;
+    QTimer *timer;
+
+    bool loadMap();
 };
 
 #endif // MAINWINDOW_H

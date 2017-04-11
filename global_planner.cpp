@@ -116,37 +116,42 @@ GlobalPlanner::GlobalPlanner(grid_map::Map *map){
 
 }
 
-void GlobalPlanner::makePlan(Definitions::POINT start, Definitions::POINT target, std::vector<Definitions::POINT> *plan){
+bool GlobalPlanner::makePlan(Definitions::POINT start, Definitions::POINT target, std::vector<Definitions::POINT> *plan){
 
     dijkstra::Dijkstra dijkstra;
     plan->clear();
 
-std::vector<std::vector<float> > graph = map->getGraph();
+    std::vector<std::vector<float> > graph = map->getGraph();
+    std::vector<int> points;
 
-  std::vector<int> points = dijkstra.findShortestPath(&graph, map->getCellId(start), map->getCellId(target));
+    try{
+        points = dijkstra.findShortestPath(&graph, map->getCellId(start), map->getCellId(target));
+    } catch (std::exception &e){
+        return false;
 
+    }
     plan->push_back((*map)(points[0]));
 
     double anglePrevious = Definitions::getAngle(plan->at(0), start);
 
-   for (int i = 1; i < points.size(); i++){
+    for (int i = 1; i < points.size(); i++){
         plan->push_back((*map)(points[i]));
-
-       double angle = Definitions::getAngle(plan->at(i - 1), plan->at(i));
-       //vymaze zbytocne body
-       if (fabs(anglePrevious - angle) < 0.0001) {
-         //  plan->erase(plan->begin() + i - 1);
-         //  points.erase(points.begin() + i - 1);
-         //  i--;
-       } else {
-           anglePrevious = angle;
-       }
+        map->setValue(points[i], grid_map::PATH);
+        double angle = Definitions::getAngle(plan->at(i - 1), plan->at(i));
+        //vymaze zbytocne body
+        if (fabs(anglePrevious - angle) < 0.0001) {
+            plan->erase(plan->begin() + i - 1);
+            points.erase(points.begin() + i - 1);
+            i--;
+        } else {
+            anglePrevious = angle;
+        }
     }
 
     //nahradi posledny bod cielom
     plan->pop_back();
     plan->push_back(target);
-
+    return true;
 }
 
 

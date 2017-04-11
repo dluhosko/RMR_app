@@ -11,6 +11,7 @@ namespace grid_map {
     const static int UNKNOWN = -1;
     const static int OCCUPIED = 1;
     const static int EMPTY = 0;
+    const static int PATH = 2;
 
 
     class MapException : public std::exception {
@@ -39,11 +40,12 @@ namespace grid_map {
             this->height = round(height / resolution);
             this->width = round(width / resolution);
 
-            printf("\nheight %d width %d\n\n", this->height, this->width);
-           // this->height = height;
-            //this->width = width;
+            map.resize(this->width * this->height, UNKNOWN);
+        }
 
-            map.resize(this->width * this->height, EMPTY);
+        void setEmpty(){
+            for (int i = 0; i < map.size(); i++)
+                map[i] = EMPTY;
         }
 
         int getValue(double x, double y) {
@@ -52,7 +54,7 @@ namespace grid_map {
             int j = getColumn(x);
 
             checkCoorditanes(i,j);
-           return map[i*width + j];
+            return map[i*width + j];
         }
 
         int getValue(int i, int j) {
@@ -75,12 +77,10 @@ namespace grid_map {
             int j = getColumn(x);
 
             checkCoorditanes(i,j);
-            printf("set value double");
             map[i*width + j] = value;
         }
 
         void setValue(int i, int j, int value) {
-            printf("set value int");
 
             checkCoorditanes(i,j);
 
@@ -100,12 +100,11 @@ namespace grid_map {
             double angle = Definitions::getAngle(p2, p1);
             double dist = Definitions::getDistance(p2, p1);
 
-            printf("\ndist %f angle %f\n\n", dist, angle);
             double increment = 0;
             while (increment <= dist) {
                 double x = p1.x + increment * cos(angle);
                 double y = p1.y + increment * sin(angle);
-                printf("x %f, y %f\n", x,y);
+
                 setValue(x, y, grid_map::OCCUPIED);
                 increment += resolution;
             }
@@ -178,7 +177,7 @@ namespace grid_map {
 
         Definitions::POINT operator () (int i, int j){
 
-           checkCoorditanes(i,j);
+            checkCoorditanes(i,j);
             return {getX(j), getY(i)};
         }
 
@@ -223,9 +222,9 @@ namespace grid_map {
                 }
 
                 //skontroluj bunky pod bunkou
-               if (i / width < height - 1){
+                if (i / width < height - 1){
 
-                   //skontroluj bunku, ktora je na pravo ale nie mimo mapy (diagonalne v pravo)
+                    //skontroluj bunku, ktora je na pravo ale nie mimo mapy (diagonalne v pravo)
                     if ( (i + 1) % width)
 
                         if (map[i + width + 1] != OCCUPIED){
@@ -233,15 +232,15 @@ namespace grid_map {
                             graph[i + width + 1][i] = diagDistance;
                         }
 
-                   //skontroluj bunku, ktora je na lavo ale nie mimo mapy (diagonalne vlavo)
-                   if ( i % width)
+                    //skontroluj bunku, ktora je na lavo ale nie mimo mapy (diagonalne vlavo)
+                    if ( i % width)
 
                         if (map[i + width - 1] != OCCUPIED){
                             graph[i][i + width - 1] = diagDistance;
                             graph[i + width - 1][i] = diagDistance;
                         }
 
-                   //skontroluj bunku, ktora je kolmo dole
+                    //skontroluj bunku, ktora je kolmo dole
                     if (map[i + width] != OCCUPIED){
                         graph[i][i + width] = distance;
                         graph[i + width][i] = distance;
@@ -259,7 +258,6 @@ namespace grid_map {
 
         void checkCoorditanes(int i, int j){
 
-            printf("i %d height %d, j %d, width %d\n", i, height, j, width);
             if (i < 0  || i > height)  throw MapException("i: " +std::to_string(i) + "  point is out of map, height of map is " + std::to_string(height));
             if( j < 0 || j >= width) throw MapException("j: " +std::to_string(j) + " point is out of map, width of map is " + std::to_string(width));
 

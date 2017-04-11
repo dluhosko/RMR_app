@@ -19,8 +19,12 @@ public:
 
     }
 
-    void update(){
-        //map->setValue(-5.4,  2.3, grid_map::OCCUPIED);
+    void update(const LaserMeasurement *measure){
+
+        //PRIKLAD setovania mapy
+        //  map->setValue(x, y, grid_map::EMPTY); //volne policko
+        //  map->setValue(x + 1, y, grid_map::OCCUPIED); //obsadene policko
+
     }
 
 private:

@@ -17,7 +17,8 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     irobotcreate.cpp \
     rplidar.cpp \
-    global_planner.cpp
+    global_planner.cpp \
+    map_loader.cpp
 
 HEADERS  += mainwindow.h \
     irobotcreate.h \
@@ -27,6 +28,7 @@ HEADERS  += mainwindow.h \
     grid_map.h \
     definitions.h \
     global_planner.h \
-    mapping.h
+    mapping.h \
+    map_loader.h
 
 FORMS    += mainwindow.ui

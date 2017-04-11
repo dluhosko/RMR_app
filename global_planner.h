@@ -69,7 +69,7 @@ public:
    //GlobalPlanner(){}
     GlobalPlanner(grid_map::Map *map);
 
-    void makePlan(Definitions::POINT start, Definitions::POINT target, std::vector<Definitions::POINT> *plan);
+    bool makePlan(Definitions::POINT start, Definitions::POINT target, std::vector<Definitions::POINT> *plan);
 
 private:
     grid_map::Map *map;
